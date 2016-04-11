@@ -21,7 +21,7 @@ app.get('/', middleware.requireAuthentication, function (req, res) {
 });
 
 app.get('/about', function (req, res) {
-	res.send('This is new website page');
+	res.send('New website page');
 });
 
 app.use(express.static(__dirname + '/public'));
